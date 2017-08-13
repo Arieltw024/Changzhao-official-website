@@ -28,9 +28,11 @@
 }
 
 #header>ul>li {
+	border: 1px solid #E0E0E0;
+	border-radius: 15px;
 	display: inline;
 	font-size: 18px;
-	padding: 10px 10px;
+	padding: 5px 15px;
 	font-weight: bold;
 	font-family: Microsoft JhengHei;
 }
@@ -41,11 +43,11 @@
 }
 
 #header>ul>li:hover {
-	background-color: #FFFACD;
+	border: none;
+	background-color: #E0E0E0;
 	text-decoration: none;
 	transition: 0.7s;
 }
-
 
 #header>ul>div>li {
 	margin-top: 10px;
@@ -77,43 +79,53 @@
 	background-color: #212121;
 }
 
-.about_us {
-	position: relative;
+.aboutus_title {
 	background-color: #FFFFF0;
-	height: 200px;
-	color: black;
-	font-size: 20px;
+	margin: 20px auto;
+	display: table;
 }
 
-.about_us:before {
+.aboutus_title>h1 {
+	position: relative;
+	font-family: Georgia, SimSun;
+	font-size: 32px;
+	padding: 0 20px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.aboutus_title>h1>span {
+	font-style: italic;
+	font-size: 28px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+
+.aboutus_title>h1:after {
+	left: 100%;
+}
+
+.aboutus_title>h1:before {
+	right: 100%;
+}
+
+.aboutus_title>h1:after, .aboutus_title>h1:before {
 	content: '';
 	position: absolute;
-	width: 70%;
-	height: 5%;
-	left: 15%;
-	top: 50px;
-	opacity: 0.3;
-	background-color: #BDBDBD;
+	top: calc(50% - 2px);
+	width: 90%;
+	height: 4px;
+	border-width: 1px 0;
+    border-style: solid;
+    border-color: #e3e3e3;
 }
 
-.about_us>h1 {
-	font-family: Georgia, Meiryo;
-	font-size: 35px;
-	width: 70%;
-	margin: 0 auto;
-	padding: 20px 0;
-	cursor: default;
-}
-
-.about_us>h1>span {
-	font-style: italic;
-	font-size: 30px;
-}
-
-.about_us>p {
+.aboutus_content {
 	font-family: NSimSun;
 	height: 50%;
-	width: 70%;
+	width: 65%;
+	font-size: 20px;
 	line-height: 35px;
 	margin: 0 auto;
 	overflow: auto;
@@ -138,7 +150,7 @@
 	display: inline-block;
 	margin: 5% 5%;
 	/*height: 250px;*/
-	width: 250px;
+	width: 230px;
 	padding-left: 0;
 	
 }
@@ -147,7 +159,8 @@
 	line-height: 50px;
 	text-align: center;
 	list-style-type: none;
-	border-radius: 8px;
+	margin: 10px auto;
+	border-radius: 10px;
 	border-bottom: 3px solid gray;
 	font-size: 20px;
 	font-family: Microsoft JhengHei;
@@ -157,18 +170,19 @@
 .item_link {
 	color: black;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .item_list:hover, .item_link:hover {
 	text-decoration: none;
 	color: black;
-	background-color: #FFFACD;
+	background-color: #E0E0E0;
 	transition: 0.5s;
 	font-weight: blod;
 }
 
 .item_link:active {
-	color: yellow;
+	text-decoration: none;
 }
 
 .service_title {
@@ -331,7 +345,7 @@
   	top: 0;
   	opacity: 0;
   	transition: .3s ease;
-  	background-color: #1E88E5;
+  	background-color: #BDBDBD;
 }
 
 .life_content:hover .life_pic_overlay {
@@ -341,8 +355,8 @@
 
 .overlay_text {
 	position: absolute;
-	color: white;
-  	font-size: 20px;
+	color: #FFFFF0;
+  	font-size: 18px;
   	font-family: Georgia;
   	font-style: italic;
   	cursor: pointer;
@@ -387,6 +401,47 @@
   	color: #838383;
   	font-size: 14px;
   	cursor: default;
+}
+
+.location {
+	background-color: #FFFFF0;
+	margin: 20px auto;
+	display: table;
+}
+
+.location>h5 {
+	position: relative;
+	font-family: Georgia, SimSun;
+	font-size: 32px;
+	padding: 0 20px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.location>h5>span {
+	font-style: italic;
+	font-size: 28px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.location>h5:after {
+	left: 100%;
+}
+
+.location>h5:before {
+	right: 100%;
+}
+
+.location>h5:after, .location>h5:before {
+	content: '';
+	position: absolute;
+	top: calc(50% - 2px);
+	width: 140%;
+	height: 4px;
+	border-width: 1px 0;
+    border-style: solid;
+    border-color: #e3e3e3;
 }
 
 
