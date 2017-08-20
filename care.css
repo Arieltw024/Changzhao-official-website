@@ -4,6 +4,7 @@
 }
 
 #header {
+	position: relative;
 	background-color: #FFFFF0;
 	display: inline-block;
 	width: 100%;
@@ -14,47 +15,44 @@
 }
 
 .header-pic {
-	display: inline-block;
+	display: inline;
 	vertical-align: middle;
-	height: 100px;
 	margin-top: 10px;
 }
 
-
-#header>ul {
-	margin-top: 25px;
+.header_box {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-#header>ul>li {
+.header_list {
+	margin-top: 25px;
+	display: inline-block;
+}
+
+.header_list>li {
 	border: 1px solid #E0E0E0;
 	border-radius: 5px;
-	display: inline;
-	font-size: 18px;
-	padding: 5px 15px;
 	font-weight: bold;
 	font-family: Microsoft JhengHei;
 }
 
-#header>ul>li>a {
+.header_list>li>a {
 	color: black;
 	text-decoration: none;
 }
 
-#header>ul>li:hover {
+.header_list>li:hover {
 	border: none;
 	background-color: #E0E0E0;
 	text-decoration: none;
 	transition: 0.7s;
 }
 
-#header>ul>div>li {
+.header_font {
 	margin-top: 10px;
 	font-size: 15px;
 	color: black;
-	list-style: none;
-	line-height: 35px;
 	font-family: NSimSun;
 	cursor: default;
 }
@@ -327,7 +325,6 @@
 .life_content {
 	position: relative;
 	text-align: center;
-	
 }
 
 .life_pic {
@@ -371,6 +368,12 @@
   	font-style: italic;
   	vertical-align: middle;
   	cursor: default;
+}
+
+.life_content {
+	overflow: hidden;
+  	background-size: cover;
+  	background-position: center;
 }
 
 .life_content>h5>a {
@@ -443,6 +446,20 @@
 
 
 @media screen and (min-width: 999px) {
+	.header-pic {
+		height: 100px;
+	}
+
+	.header_list>li {
+		display: inline;
+		font-size: 18px;
+		padding: 5px 15px;
+	}
+
+	.menu {
+		display: none;
+	}
+
 	#myCarousel {
 		width: 70%;
 	}
@@ -466,9 +483,6 @@
 		display: inline-block;
   		width: calc(100% / 4 - 20px * 2 / 4);
   		height: 450px;
-  		overflow: hidden;
-  		background-size: cover;
-  		background-position: center;
 	}
 
 	.life_content:nth-child(2n) {
@@ -477,6 +491,55 @@
 }
 
 @media screen and (max-width: 1000px) {
+	.header-pic {
+		position: absolute;
+		height: 80px;
+		left: 13%;
+	}
+
+	.menu {
+		position: absolute;
+		font-family: Georgia;
+		border: 1px solid #E0E0E0;
+		text-decoration: none;
+		top: 35%;
+		right: 10%;
+		color: black;
+		text-transform: uppercase;
+		font-size: 0.9em;
+		padding: 0.7em 1.2em;
+		border-radius: 4px;
+	}
+
+	.menu>span {
+		font-family: Georgia;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+	.menu:hover,span:hover {
+		text-decoration: none;
+		color: black;
+		border: none;
+		background-color: #E0E0E0;
+		text-decoration: none;
+		transition: 0.7s;
+	}
+
+	.header_list {
+		position: absolute;
+		list-style-type: none;
+		top: 50%;
+		right: 10%;
+		width: 25%;
+	}
+
+	.header_link {
+		display: block;
+		padding: 1em;
+		margin-bottom: 1px;
+	}
+
 	.item_pic {
 		height: 400px !important;
 		width: 100% !important;
@@ -501,12 +564,13 @@
 		display: inline-block;
   		width: calc(100% / 3 - 10px * 2 / 3);
   		height: 350px;
-  		overflow: hidden;
-  		background-size: cover;
-  		background-position: center;
 	}
 	
 	.life_pic {
+		height: 200px;
+	}
+
+	.life_pic_overlay {
 		height: 200px;
 	}
 
@@ -517,11 +581,7 @@
 	.life_content {
 		display: inline-block;
   		width: calc(100% / 2 - 5px * 2 / 2);
-  		height: 400px;
-  		overflow: hidden;
-  		background-size: cover;
-  		background-position: center;
-	}
+  	}
 
 }
 
