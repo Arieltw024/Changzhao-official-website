@@ -540,6 +540,10 @@
 		margin-bottom: 1px;
 	}
 
+	.header_font {
+		margin-top: 110px;
+	}
+
 	.item_pic {
 		height: 400px !important;
 		width: 100% !important;
@@ -556,8 +560,9 @@
 
 	.item_list {
 		display: inline;
-		margin: auto 1.5%;
+		margin: auto 1.25%;
 		padding: 10px 20px;
+		font-size: 16px;
 	}
 
 	.life_content {
