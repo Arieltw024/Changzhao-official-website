@@ -29,7 +29,7 @@
 
 #header>ul>li {
 	border: 1px solid #E0E0E0;
-	border-radius: 15px;
+	border-radius: 5px;
 	display: inline;
 	font-size: 18px;
 	padding: 5px 15px;
@@ -147,12 +147,10 @@
 
 
 .service_items>ul {
-	display: inline-block;
 	margin: 5% 5%;
 	/*height: 250px;*/
-	width: 230px;
+	width: 100%;
 	padding-left: 0;
-	
 }
 
 .item_list {
@@ -178,7 +176,6 @@
 	color: black;
 	background-color: #E0E0E0;
 	transition: 0.5s;
-	font-weight: blod;
 }
 
 .item_link:active {
@@ -457,6 +454,8 @@
 
 	.service_items>ul {
 		float: left;
+		width: 230px;
+		display: inline-block;
 	}
 
 	.service_content {
@@ -492,15 +491,25 @@
 		height: 100%;
 	}
 
+	.item_list {
+		display: inline;
+		margin: auto 1.5%;
+		padding: 10px 20px;
+	}
+
 	.life_content {
 		display: inline-block;
   		width: calc(100% / 3 - 10px * 2 / 3);
-  		height: 400px;
+  		height: 350px;
   		overflow: hidden;
   		background-size: cover;
   		background-position: center;
 	}
 	
+	.life_pic {
+		height: 200px;
+	}
+
 }
 
 @media screen and (max-width: 600px) {
