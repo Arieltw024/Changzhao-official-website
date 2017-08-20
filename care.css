@@ -100,15 +100,15 @@
 }
 
 
-.aboutus_title>h1:after {
+.aboutus_title>h1:after,.service_title>h2:after,.life_title>h4:after,.location>h5:after {
 	left: 100%;
 }
 
-.aboutus_title>h1:before {
+.aboutus_title>h1:before,.service_title>h2:before,.life_title>h4:before,.location>h5:before {
 	right: 100%;
 }
 
-.aboutus_title>h1:after, .aboutus_title>h1:before {
+.aboutus_title>h1:after,.aboutus_title>h1:before,.service_title>h2:after,.life_title>h4:after,.location>h5:after,.service_title>h2:before,.life_title>h4:before,.location>h5:before {
 	content: '';
 	position: absolute;
 	top: calc(50% - 2px);
@@ -143,9 +143,8 @@
 	/*display: inline-block;*/
 }
 
-
 .service_items>ul {
-	margin: 5% 5%;
+	margin: 5% 8%;
 	/*height: 250px;*/
 	width: 100%;
 	padding-left: 0;
@@ -155,12 +154,11 @@
 	line-height: 50px;
 	text-align: center;
 	list-style-type: none;
-	margin: 10px auto;
-	border-radius: 10px;
-	border-bottom: 3px solid gray;
-	font-size: 20px;
+	margin: 10px 3%;
+	border: 1px solid #E0E0E0;
+	border-radius: 5px;
+	font-size: 18px;
 	font-family: Microsoft JhengHei;
-	background-color: #FFFFF0;
 }
 
 .item_link {
@@ -200,26 +198,6 @@
 	font-size: 28px;
 	font-weight: 400;
 	cursor: pointer;
-}
-
-
-.service_title>h2:after {
-	left: 100%;
-}
-
-.service_title>h2:before {
-	right: 100%;
-}
-
-.service_title>h2:after, .service_title>h2:before {
-	content: '';
-	position: absolute;
-	top: calc(50% - 2px);
-	width: 100%;
-	height: 4px;
-	border-width: 1px 0;
-    border-style: solid;
-    border-color: #e3e3e3;
 }
 
 .service_content {
@@ -297,23 +275,9 @@
 	cursor: pointer;
 }
 
-.life_title>h4:after {
-	left: 100%;
-}
-
-.life_title>h4:before {
-	right: 100%;
-}
-
 .life_title>h4:after, .life_title>h4:before {
-	content: '';
-	position: absolute;
-	top: calc(50% - 2px);
 	width: 125%;
 	height: 4px;
-	border-width: 1px 0;
-    border-style: solid;
-    border-color: #e3e3e3;
 }
 
 .life_all {
@@ -425,23 +389,9 @@
 	cursor: pointer;
 }
 
-.location>h5:after {
-	left: 100%;
-}
-
-.location>h5:before {
-	right: 100%;
-}
-
 .location>h5:after, .location>h5:before {
-	content: '';
-	position: absolute;
-	top: calc(50% - 2px);
 	width: 140%;
 	height: 4px;
-	border-width: 1px 0;
-    border-style: solid;
-    border-color: #e3e3e3;
 }
 
 
@@ -471,12 +421,12 @@
 
 	.service_items>ul {
 		float: left;
-		width: 230px;
+		width: 200px;
 		display: inline-block;
 	}
 
 	.service_content {
-		margin-left: 400px;
+		margin-left: 350px;
 	}
 
 	.life_content {
@@ -556,6 +506,14 @@
 	.service_content {
 		width: 95%;
 		height: 100%;
+	}
+
+	.service_title>h2,.life_title>h4,.location>h5 {
+	
+	}
+
+	.service_title>h2>span,.life_title>h4>span,.location>h5>span {
+
 	}
 
 	.item_list {
