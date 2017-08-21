@@ -85,40 +85,38 @@
 	display: table;
 }
 
-.aboutus_title>h1 {
+.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
 	position: relative;
 	font-family: Georgia, SimSun;
-	font-size: 32px;
 	padding: 0 20px;
 	font-weight: 700;
 	cursor: pointer;
 }
 
-.aboutus_title>h1>span {
+.aboutus_title>h1>span,.service_title>h2>span,.life_title>h4>span,.location>h6>span {
 	font-style: italic;
 	font-size: 28px;
 	font-weight: 400;
 	cursor: pointer;
 }
 
-
-.aboutus_title>h1:after,.service_title>h2:after,.life_title>h4:after,.location>h5:after {
+.aboutus_title>h1:after,.service_title>h2:after,.life_title>h4:after,.location>h6:after {
 	left: 100%;
 }
 
-.aboutus_title>h1:before,.service_title>h2:before,.life_title>h4:before,.location>h5:before {
+.aboutus_title>h1:before,.service_title>h2:before,.life_title>h4:before,.location>h6:before {
 	right: 100%;
 }
 
-.aboutus_title>h1:after,.aboutus_title>h1:before,.service_title>h2:after,.life_title>h4:after,.location>h5:after,.service_title>h2:before,.life_title>h4:before,.location>h5:before {
+.aboutus_title>h1:after,.service_title>h2:after,.life_title>h4:after,.location>h6:after,.aboutus_title>h1:before,.service_title>h2:before,.life_title>h4:before,.location>h6:before {
 	content: '';
 	position: absolute;
 	top: calc(50% - 2px);
 	width: 90%;
 	height: 4px;
 	border-width: 1px 0;
-    border-style: solid;
-    border-color: #e3e3e3;
+    	border-style: solid;
+    	border-color: #e3e3e3;
 }
 
 .aboutus_content {
@@ -161,6 +159,7 @@
 	border-radius: 5px;
 	font-size: 18px;
 	font-family: Microsoft JhengHei;
+	cursor: pointer;
 }
 
 .item_link {
@@ -176,8 +175,9 @@
 	transition: 0.5s;
 }
 
-.item_link:active {
+.item_link:active,.item_link:actived {
 	text-decoration: none;
+	background-color: #E0E0E0;
 }
 
 .service_title {
@@ -186,7 +186,7 @@
 	display: table;
 }
 
-.service_title>h2 {
+/*.service_title>h2 {
 	position: relative;
 	font-family: Georgia, SimSun;
 	font-size: 32px;
@@ -200,7 +200,7 @@
 	font-size: 28px;
 	font-weight: 400;
 	cursor: pointer;
-}
+}*/
 
 .service_content {
 	/*display: inline-block;*/
@@ -261,7 +261,7 @@
 
 }
 
-.life_title>h4 {
+/*.life_title>h4 {
 	position: relative;
 	font-family: Georgia, SimSun;
 	cursor: pointer;
@@ -275,7 +275,7 @@
 	font-size: 28px;
 	font-weight: 400;
 	cursor: pointer;
-}
+}*/
 
 .life_title>h4:after, .life_title>h4:before {
 	width: 125%;
@@ -375,7 +375,7 @@
 	display: table;
 }
 
-.location>h5 {
+/*.location>h6 {
 	position: relative;
 	font-family: Georgia, SimSun;
 	font-size: 32px;
@@ -384,14 +384,14 @@
 	cursor: pointer;
 }
 
-.location>h5>span {
+.location>h6>span {
 	font-style: italic;
 	font-size: 28px;
 	font-weight: 400;
 	cursor: pointer;
-}
+}*/
 
-.location>h5:after, .location>h5:before {
+.location>h6:after, .location>h6:before {
 	width: 140%;
 	height: 4px;
 }
@@ -401,42 +401,49 @@
 	.header-pic {
 		height: 100px;
 	}
-
 	.header_list>li {
 		display: inline;
 		font-size: 18px;
 		padding: 5px 15px;
 	}
-
+	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
+		font-size: 32px;
+	}
+	.aboutus_title>h1>span,.service_title>h2>span,.life_title>h4>span,.location>h6>span {
+		font-size: 28px;
+	}
+	.aboutus_title>h1:after,.aboutus_title>h1:before {
+		width: 80%;
+	}
+	.service_title>h2:after,.service_title>h2:before {
+		width: 120%;
+	}
+	.life_title>h4:after,.life_title>h4:before,.location>h6:after,.location>h6:before {
+		width: 160%;
+	}
 	.menu {
 		display: none;
 	}
-
 	#myCarousel {
 		width: 70%;
 	}
-
 	.item_pic {
 		height: 650px !important;
 		width: 100% !important;
 	}
-
 	.service_items>ul {
 		float: left;
 		width: 200px;
 		display: inline-block;
 	}
-
 	.service_content {
 		margin-left: 350px;
 	}
-
 	.life_content {
 		display: inline-block;
   		width: calc(100% / 4 - 20px * 2 / 4);
   		height: 450px;
 	}
-
 	.life_content:nth-child(2n) {
 		margin: 0 5px;
 	}
@@ -448,7 +455,21 @@
 		height: 80px;
 		left: 13%;
 	}
-
+	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
+		font-size: 28px;
+	}
+	.aboutus_title>h1>span,.service_title>h2>span,.life_title>h4>span,.location>h6>span {
+		font-size: 24px;
+	}
+	.aboutus_title>h1:after,.aboutus_title>h1:before {
+		width: 40%;
+	}
+	.service_title>h2:after,.service_title>h2:before {
+		width: 65%;
+	}
+	.life_title>h4:after,.life_title>h4:before,.location>h6:after,.location>h6:before {
+		width: 75%;
+	}
 	.menu {
 		position: absolute;
 		font-family: Georgia;
