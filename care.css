@@ -2,7 +2,6 @@
 	margin: 0 auto;
 	background-color: #FFFFF0;
 }
-
 #header {
 	position: relative;
 	background-color: #FFFFF0;
@@ -13,24 +12,20 @@
 	padding-top: 5px;
 	text-align: center;
 }
-
 .header-pic {
 	display: inline;
 	vertical-align: middle;
 	margin-top: 10px;
 	cursor: pointer;
 }
-
 .header_box {
 	display: inline-block;
 	vertical-align: middle;
 }
-
 .header_list {
 	margin-top: 25px;
 	display: inline-block;
 }
-
 .header_list>li {
 	border: 1px solid #E0E0E0;
 	border-radius: 5px;
@@ -38,38 +33,32 @@
 	font-family: Microsoft JhengHei;
 	cursor: pointer;
 }
-
 .header_list>li>a {
 	color: black;
 	text-decoration: none;
 }
-
 .header_list>li:hover {
 	border: none;
 	background-color: #E0E0E0;
 	text-decoration: none;
 	transition: 0.7s;
 }
-
 .header_font {
 	margin-top: 10px;
-	font-size: 15px;
+	font-size: 14px;
 	color: black;
 	font-family: NSimSun;
 	cursor: default;
 }
-
 .carousel_box {
 	background-color: #FFFFF0;
 	overflow: hidden;
  	background-size: cover;
 	background-position: center;
 }
-
 #myCarousel {
 	margin: 25px auto;
 }
-
 .item:before {
 	content: '';
 	position: absolute;
@@ -78,13 +67,11 @@
 	opacity: 0.2;
 	background-color: #212121;
 }
-
 .aboutus_title {
 	background-color: #FFFFF0;
 	margin: 20px auto;
 	display: table;
 }
-
 .aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
 	position: relative;
 	font-family: Georgia, SimSun;
@@ -92,22 +79,18 @@
 	font-weight: 700;
 	cursor: pointer;
 }
-
 .aboutus_title>h1>span,.service_title>h2>span,.life_title>h4>span,.location>h6>span {
 	font-style: italic;
 	font-size: 28px;
 	font-weight: 400;
 	cursor: pointer;
 }
-
 .aboutus_title>h1:after,.service_title>h2:after,.life_title>h4:after,.location>h6:after {
 	left: 100%;
 }
-
 .aboutus_title>h1:before,.service_title>h2:before,.life_title>h4:before,.location>h6:before {
 	right: 100%;
 }
-
 .aboutus_title>h1:after,.service_title>h2:after,.life_title>h4:after,.location>h6:after,.aboutus_title>h1:before,.service_title>h2:before,.life_title>h4:before,.location>h6:before {
 	content: '';
 	position: absolute;
@@ -115,10 +98,9 @@
 	width: 90%;
 	height: 4px;
 	border-width: 1px 0;
-    	border-style: solid;
-    	border-color: #e3e3e3;
+    border-style: solid;
+    border-color: #e3e3e3;
 }
-
 .aboutus_content {
 	font-family: NSimSun;
 	height: 50%;
@@ -129,27 +111,23 @@
 	overflow: auto;
 	cursor: default;
 }
-
 .latest_news {
 	background-color: white;
 	height: 200px; 
 	background-color: #FFFFF0;
 }
-
 .service_items {
 	width: 70%;
 	background-color: #FFFFF0;
 	margin: 0 auto;
 	/*display: inline-block;*/
 }
-
 .service_items>ul {
 	margin: 5% 8%;
 	/*height: 250px;*/
 	width: 100%;
 	padding-left: 0;
 }
-
 .item_list {
 	line-height: 50px;
 	text-align: center;
@@ -161,55 +139,32 @@
 	font-family: Microsoft JhengHei;
 	cursor: pointer;
 }
-
 .item_link {
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
 }
-
 .item_list:hover, .item_link:hover {
 	text-decoration: none;
 	color: black;
 	background-color: #E0E0E0;
 	transition: 0.5s;
 }
-
 .item_link:active,.item_link:actived {
 	text-decoration: none;
 	background-color: #E0E0E0;
 }
-
 .service_title {
 	background-color: #FFFFF0;
 	margin: 20px auto;
 	display: table;
 }
-
-/*.service_title>h2 {
-	position: relative;
-	font-family: Georgia, SimSun;
-	font-size: 32px;
-	padding: 0 20px;
-	font-weight: 700;
-	cursor: pointer;
-}
-
-.service_title>h2>span {
-	font-style: italic;
-	font-size: 28px;
-	font-weight: 400;
-	cursor: pointer;
-}*/
-
 .service_content {
 	/*display: inline-block;*/
 	margin-top: 40px;
 	margin-bottom: 20px;
 	height: 500px;
 }
-
-
 .service_content>h3 {
 	font-family: Georgia, SimHei;
 	font-size: 25px;
@@ -217,20 +172,17 @@
 	letter-spacing: 3px;
 	cursor: pointer;
 }
-
 .service_content>h3>span {
 	font-size: 18px;
 	font-style: italic;
 	letter-spacing: 0;
 	cursor: pointer;
 }
-
 .service_content>ol {
 	margin: 20px 0;
 	width: 95%;
 	vertical-align: middle;
 }
-
 .service_content>ol>li {
 	line-height: 45px;
 	font-size: 18px;
@@ -239,13 +191,11 @@
 	cursor: default;
 	/*Microsoft YaHei,STCaiyun*/
 }
-
 .service_content>ul {
 	margin: 20px 0;
 	width: 95%;
 	vertical-align: middle;
 }
-
 .service_content>ul>li {
 	line-height: 45px;
 	font-size: 18px;
@@ -253,51 +203,29 @@
 	width: 100%;
 	cursor: default;
 }
-
 .life_title {
 	background-color: #FFFFF0;
 	margin: 40px auto;
 	display: table;
 
 }
-
-/*.life_title>h4 {
-	position: relative;
-	font-family: Georgia, SimSun;
-	cursor: pointer;
-	font-size: 32px;
-	padding: 0 20px;
-	font-weight: 700;
-}
-
-.life_title>h4>span {
-	font-style: italic;
-	font-size: 28px;
-	font-weight: 400;
-	cursor: pointer;
-}*/
-
 .life_title>h4:after, .life_title>h4:before {
 	width: 125%;
 	height: 4px;
 }
-
 .life_all {
 	width: 70%;
 	margin: 0 auto;
 	background-color: #FFFFF0;
 }
-
 .life_content {
 	position: relative;
 	text-align: center;
 }
-
 .life_pic {
 	width: 100%;
 	height: 250px;
 }
-
 .life_pic_overlay {
 	position: absolute;
  	width: 100%;
@@ -307,12 +235,10 @@
   	transition: .3s ease;
   	background-color: #BDBDBD;
 }
-
 .life_content:hover .life_pic_overlay {
 	opacity: 1;
 	cursor: pointer;
 }
-
 .overlay_text {
 	position: absolute;
 	color: #FFFFF0;
@@ -325,7 +251,6 @@
   	transform: translate(-50%, -50%);
   	-ms-transform: translate(-50%, -50%);*/
 }
-
 .life_date {
 	padding-top: 15px;
   	font-family: Georgia;
@@ -335,18 +260,15 @@
   	vertical-align: middle;
   	cursor: default;
 }
-
 .life_content {
 	overflow: hidden;
   	background-size: cover;
   	background-position: center;
 }
-
 .life_content>h5>a {
 	color: black;
   	text-decoration: none;
 }
-
 .life_content>h5 {
 	font-family: monospace;
 	vertical-align: middle;
@@ -356,11 +278,9 @@
   	letter-spacing: 2px;
   	line-height: 150%;
 }
-
 .life_content>h5>a:hover {
 	text-decoration: none;
 }
-
 .life_font {
 	vertical-align: middle;
 	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang TC,Hiragino Sans GB,Microsoft Yahei,sans-serif;
@@ -368,42 +288,25 @@
   	font-size: 14px;
   	cursor: default;
 }
-
 .location {
 	background-color: #FFFFF0;
 	margin: 20px auto;
 	display: table;
 }
-
-/*.location>h6 {
-	position: relative;
-	font-family: Georgia, SimSun;
-	font-size: 32px;
-	padding: 0 20px;
-	font-weight: 700;
-	cursor: pointer;
-}
-
-.location>h6>span {
-	font-style: italic;
-	font-size: 28px;
-	font-weight: 400;
-	cursor: pointer;
-}*/
-
 .location>h6:after, .location>h6:before {
 	width: 140%;
 	height: 4px;
 }
-
-
 @media screen and (min-width: 999px) {
+	#header {
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+	}
 	.header-pic {
 		height: 100px;
 	}
 	.header_list>li {
 		display: inline;
-		font-size: 18px;
+		font-size: 16px;
 		padding: 5px 15px;
 	}
 	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
@@ -483,13 +386,11 @@
 		padding: 0.7em 1.2em;
 		border-radius: 4px;
 	}
-
 	.menu>span {
 		font-family: Georgia;
 		font-size: 1.2em;
 		font-weight: bold;
 	}
-
 	.menu:hover,span:hover {
 		text-decoration: none;
 		color: black;
@@ -498,77 +399,63 @@
 		text-decoration: none;
 		transition: 0.7s;
 	}
-
 	.header_list {
 		position: absolute;
+		z-index: 1;
 		list-style-type: none;
 		top: 50%;
 		right: 10%;
-		width: 25%;
+		width: 15%;
 	}
-
+	.header_list>li {
+		background-color: #FFFFF0;
+	}
 	.header_link {
 		display: block;
-		padding: 1em;
+		padding: 1em 0.5em;
 		margin-bottom: 1px;
 	}
-
 	.header_font {
 		margin-top: 110px;
 	}
-
 	.item_pic {
 		height: 400px !important;
 		width: 100% !important;
 	}
-	
+	.carousel_box {
+		position: static;
+	}
 	#myCarousel {
 		width: 80%;
 	}
-
 	.service_content {
 		width: 95%;
 		height: 100%;
 	}
-
-	.service_title>h2,.life_title>h4,.location>h5 {
-	
-	}
-
-	.service_title>h2>span,.life_title>h4>span,.location>h5>span {
-
-	}
-
 	.item_list {
 		display: inline;
 		margin: auto 1.25%;
 		padding: 10px 20px;
 		font-size: 16px;
 	}
-
 	.life_content {
 		display: inline-block;
   		width: calc(100% / 3 - 10px * 2 / 3);
   		height: 350px;
 	}
-	
 	.life_pic {
 		height: 200px;
 	}
-
 	.life_pic_overlay {
 		height: 200px;
 	}
-
 }
 
 @media screen and (max-width: 600px) {
-
 	.life_content {
 		display: inline-block;
   		width: calc(100% / 2 - 5px * 2 / 2);
   	}
-
 }
 
 	border: 1px solid rgba(255, 0, 0, .3);
