@@ -45,6 +45,7 @@
 }
 .header_font {
 	margin-top: 10px;
+	margin-left: 5%;
 	font-size: 14px;
 	color: black;
 	font-family: NSimSun;
@@ -52,6 +53,7 @@
 }
 .carousel_box {
 	background-color: #FFFFF0;
+	margin: 20px auto;
 	overflow: hidden;
  	background-size: cover;
 	background-position: center;
@@ -67,9 +69,14 @@
 	opacity: 0.2;
 	background-color: #212121;
 }
-.aboutus_title {
-	background-color: #FFFFF0;
+.aboutus_title,.service_title {
 	margin: 20px auto;
+}
+.life_title {
+	margin: 40px auto;
+}
+.aboutus_title,.service_title,.life_title {
+	background-color: #FFFFF0;
 	display: table;
 }
 .aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
@@ -111,11 +118,11 @@
 	overflow: auto;
 	cursor: default;
 }
-.latest_news {
+/*.latest_news {
 	background-color: white;
 	height: 200px; 
 	background-color: #FFFFF0;
-}
+}*/
 .service_items {
 	width: 70%;
 	background-color: #FFFFF0;
@@ -150,14 +157,9 @@
 	background-color: #E0E0E0;
 	transition: 0.5s;
 }
-.item_link:active,.item_link:actived {
+.item_link:active {
 	text-decoration: none;
 	background-color: #E0E0E0;
-}
-.service_title {
-	background-color: #FFFFF0;
-	margin: 20px auto;
-	display: table;
 }
 .service_content {
 	/*display: inline-block;*/
@@ -203,12 +205,6 @@
 	width: 100%;
 	cursor: default;
 }
-.life_title {
-	background-color: #FFFFF0;
-	margin: 40px auto;
-	display: table;
-
-}
 .life_title>h4:after, .life_title>h4:before {
 	width: 125%;
 	height: 4px;
@@ -226,8 +222,10 @@
 	width: 100%;
 	height: 250px;
 }
-.life_pic_overlay {
+.life_pic_overlay,.overlay_text  {
 	position: absolute;
+}
+.life_pic_overlay {
  	width: 100%;
   	height: 250px;
   	top: 0;
@@ -240,7 +238,6 @@
 	cursor: pointer;
 }
 .overlay_text {
-	position: absolute;
 	color: #FFFFF0;
   	font-size: 18px;
   	font-family: Georgia;
@@ -302,12 +299,16 @@
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
 	}
 	.header-pic {
-		height: 100px;
+		height: 90px;
 	}
 	.header_list>li {
 		display: inline;
 		font-size: 16px;
 		padding: 5px 15px;
+	}
+	.header_font {
+		white-space: nowrap;
+		width: 70%;
 	}
 	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
 		font-size: 32px;
@@ -373,14 +374,21 @@
 	.life_title>h4:after,.life_title>h4:before,.location>h6:after,.location>h6:before {
 		width: 75%;
 	}
-	.menu {
+	.menu,.header_list,	.header_list {
 		position: absolute;
+	}
+	.menu,.menu>span {
 		font-family: Georgia;
+	}
+	.menu,.menu:hover,.span:hover {
+		text-decoration: none;
+		color: black;
+	}
+	.menu {
 		border: 1px solid #E0E0E0;
 		text-decoration: none;
 		top: 35%;
 		right: 10%;
-		color: black;
 		text-transform: uppercase;
 		font-size: 0.9em;
 		padding: 0.7em 1.2em;
@@ -391,16 +399,12 @@
 		font-size: 1.2em;
 		font-weight: bold;
 	}
-	.menu:hover,span:hover {
-		text-decoration: none;
-		color: black;
-		border: none;
+	.menu:hover,.span:hover {
 		background-color: #E0E0E0;
-		text-decoration: none;
+		border: none;
 		transition: 0.7s;
 	}
 	.header_list {
-		position: absolute;
 		z-index: 1;
 		list-style-type: none;
 		top: 50%;
@@ -443,13 +447,10 @@
   		width: calc(100% / 3 - 10px * 2 / 3);
   		height: 350px;
 	}
-	.life_pic {
+	.life_pic,.life_pic_overlay {
 		height: 200px;
 	}
-	.life_pic_overlay {
-		height: 200px;
-	}
-}
+ }
 
 @media screen and (max-width: 600px) {
 	.life_content {
