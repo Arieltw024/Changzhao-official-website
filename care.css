@@ -1,4 +1,4 @@
-﻿#all_background {
+﻿﻿#all_background {
 	margin: 0 auto;
 	background-color: #FFFFF0;
 }
@@ -356,13 +356,13 @@
 		font-size: 22px;
 	}
 	.aboutus_title>h1:after,.aboutus_title>h1:before {
-		width: 40%;
+		width: 26%;
 	}
 	.service_title>h2:after,.service_title>h2:before {
-		width: 65%;
+		width: 50%;
 	}
 	.life_title>h4:after,.life_title>h4:before,.location>h6:after,.location>h6:before {
-		width: 75%;
+		width: 65%;
 	}
 	.menu,.header_list {
 		position: absolute;
@@ -464,19 +464,22 @@
     	width: 18%;
 	}
 	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	.aboutus_title>h1>span,.service_title>h2>span,.life_title>h4>span,.location>h6>span {
 		font-size: 18px;
+	}
+	.aboutus_content, .service_content>ol>li, .service_content>ul>li {
+		font-size: 15px;
 	}
 	.aboutus_title>h1:after,.aboutus_title>h1:before {
 		width: 20%;
 	}
 	.service_title>h2:after,.service_title>h2:before {
-		width: 35%;
+		width: 40%;
 	}
 	.life_title>h4:after,.life_title>h4:before,.location>h6:after,.location>h6:before {
-		width: 50%;
+		width: 55%;
 	}
 	.service_content>h3>span, .item_list {
 		font-size: 15px;
