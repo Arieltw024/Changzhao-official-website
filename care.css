@@ -2,6 +2,19 @@
 	margin: 0px auto;
 	background-color: #FFFFF0;
 }
+
+.menu_container {
+	width: 70%;
+	display: flex;
+}
+
+.menu_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 50px;
+}
+
 #header {
 	position: relative;
 	background-color: #FFFFF0;
@@ -14,12 +27,13 @@
 }
 .header-pic {
 	flex-direction: row;
-	margin-left: 20px;
 	width: 28em;
 	cursor: pointer;
 }
 .header_box {
-	width: 700px;
+}
+.header_list {
+	padding-left: 0;
 }
 .header_list>li {
 	border: 1px solid #E0E0E0;
@@ -41,7 +55,6 @@
 .header_font {
 	background-color: #FFFFF0;
 	margin-top: 10px;
-	margin-left: 5%;
 	font-size: 14px;
 	color: black;
 	font-family: NSimSun;
@@ -56,6 +69,7 @@
 }
 #myCarousel {
 	margin: 25px auto;
+	width: 70%;
 }
 .item:before {
 	content: '';
@@ -256,18 +270,23 @@
   	font-size: 14px;
   	cursor: default;
 }
+
+.menu {
+	display: none;
+}
+.header_list>li {
+	display: inline;
+	font-size: 16px;
+	padding: 5px 15px;
+}
 @media screen and (min-width: 999px) {
 	#header {
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
 	}
-	.header_list>li {
-		display: inline;
-		font-size: 16px;
-		padding: 5px 15px;
-	}
+
 	.header_font {
-		white-space: nowrap;
-		width: 70%;
+		display: flex;
+		justify-content: center;
 	}
 	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
 		font-size: 32px;
@@ -284,12 +303,7 @@
 	.life_title>h4:after,.life_title>h4:before,.location>h6:after,.location>h6:before {
 		width: 123%;
 	}
-	.menu {
-		display: none;
-	}
-	#myCarousel {
-		width: 70%;
-	}
+
 	.item_pic {
 		height: 650px !important;
 		width: 100% !important;
@@ -309,6 +323,59 @@
 	}
 	.life_content:nth-child(2n) {
 		margin: 0 5px;
+	}
+}
+
+@media screen and (max-width: 1340px) {
+	.menu_container {
+		position: relative;
+	}
+	.menu_box {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		z-index: 1;
+	}
+	.header_list > li {
+		font-size: 16px;
+		list-style-type: none;
+		display: block;
+		padding: 0;
+	}
+	.header_font {
+		display: none;
+	}
+	.header_list_container {
+		display: flex;
+		flex-direction: column;
+		width: 100px;
+	}
+	.menu,.menu>span {
+		font-family: Georgia;
+	}
+	.menu,.menu:hover,.span:hover {
+		text-decoration: none;
+		color: black;
+	}
+	.menu {
+		display: block;
+		border: 1px solid #E0E0E0;
+		top: 35%;
+		text-transform: uppercase;
+		border-radius: 4px;
+	}
+	.menu, .header_link {
+		padding: 0.7em 1.2em;
+		font-size: 0.9em;
+	}
+	.menu>span {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	.menu:hover,.span:hover {
+		background-color: #E0E0E0;
+		border: none;
+		transition: 0.7s;
 	}
 }
 
@@ -332,39 +399,7 @@
 	.life_title>h4:after,.life_title>h4:before,.location>h6:after,.location>h6:before {
 		width: 80%;
 	}
-	.menu,.header_list {
-		position: absolute;
-		z-index: 1;
-		right: 10%;
-	}
-	.menu,.menu>span {
-		font-family: Georgia;
-	}
-	.menu,.menu:hover,.span:hover {
-		text-decoration: none;
-		color: black;
-	}
-	.menu {
-		border: 1px solid #E0E0E0;
-		top: 35%;
-		text-transform: uppercase;
-		border-radius: 4px;
-	}
-	.menu, .header_link {
-		padding: 0.7em 1.2em;
-		font-size: 0.9em;
-	}
-	.menu>span {
-		font-size: 1.2em;
-		font-weight: bold;
-	}
-	.menu:hover,.span:hover {
-		background-color: #E0E0E0;
-		border: none;
-		transition: 0.7s;
-	}
 	.header_list {
-		padding-left: 0px;
 		list-style-type: none;
 		top: 50%;
 		width: 10%;
@@ -383,9 +418,6 @@
 	}
 	.carousel_box {
 		position: static;
-	}
-	#myCarousel {
-		width: 80%;
 	}
 	.service_content {
 		width: 95%;
