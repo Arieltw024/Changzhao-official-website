@@ -14,14 +14,12 @@
 }
 .header-pic {
 	flex-direction: row;
+	margin-left: 20px;
 	width: 28em;
 	cursor: pointer;
 }
 .header_box {
 	width: 700px;
-}
-.header_list {
-	justify-content:space-between;
 }
 .header_list>li {
 	border: 1px solid #E0E0E0;
@@ -101,7 +99,10 @@
     border-style: solid;
     border-color: #e3e3e3;
 }
-.aboutus_content {
+.aboutus_content,.full_life,.service_all {
+	background-color: #FFFFF0;
+}
+.aboutus_font {
 	font-family: NSimSun;
 	height: 50%;
 	width: 65%;
@@ -175,7 +176,6 @@
 	font-family: Microsoft YaHei;
 	width: 100%;
 	cursor: default;
-	/*Microsoft YaHei,STCaiyun*/
 }
 .life_title>h4:after, .life_title>h4:before {
 	width: 125%;
@@ -252,7 +252,6 @@
 }
 .life_font {
 	vertical-align: middle;
-	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang TC,Hiragino Sans GB,Microsoft Yahei,sans-serif;
   	color: #838383;
   	font-size: 14px;
   	cursor: default;
@@ -261,9 +260,6 @@
 	#header {
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
 	}
-	/*.header-pic {
-		height: 90px;
-	}*/
 	.header_list>li {
 		display: inline;
 		font-size: 16px;
@@ -319,6 +315,7 @@
 @media screen and (max-width: 1000px) {
 	.header-pic {
 		width: 25em;
+
 	}
 	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
 		font-size: 26px;
