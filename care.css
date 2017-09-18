@@ -270,7 +270,6 @@
   	font-size: 14px;
   	cursor: default;
 }
-
 .menu {
 	display: none;
 }
@@ -283,7 +282,6 @@
 	#header {
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
 	}
-
 	.header_font {
 		display: flex;
 		justify-content: center;
@@ -336,11 +334,13 @@
 		top: 50%;
 		z-index: 1;
 	}
-	.header_list > li {
-		font-size: 16px;
+	.header_list>li {
+		background-color: #FFFFF0;
 		list-style-type: none;
+		margin-bottom: 2px;
+		font-size: 14px;
 		display: block;
-		padding: 0;
+		text-align: center;
 	}
 	.header_font {
 		display: none;
@@ -360,16 +360,17 @@
 	.menu {
 		display: block;
 		border: 1px solid #E0E0E0;
-		top: 35%;
 		text-transform: uppercase;
 		border-radius: 4px;
+		top: 35%;
 	}
-	.menu, .header_link {
+	.menu {
 		padding: 0.7em 1.2em;
 		font-size: 0.9em;
+		margin: 5px auto;
 	}
 	.menu>span {
-		font-size: 1.2em;
+		font-size: 1.5em;
 		font-weight: bold;
 	}
 	.menu:hover,.span:hover {
@@ -382,7 +383,6 @@
 @media screen and (max-width: 1000px) {
 	.header-pic {
 		width: 25em;
-
 	}
 	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
 		font-size: 26px;
@@ -398,19 +398,6 @@
 	}
 	.life_title>h4:after,.life_title>h4:before,.location>h6:after,.location>h6:before {
 		width: 80%;
-	}
-	.header_list {
-		list-style-type: none;
-		top: 50%;
-		width: 10%;
-	}
-	.header_list>li {
-		background-color: #FFFFF0;
-		width: 95px;
-		margin-bottom: 1px;
-	}
-	.header_font {
-		display: flex;
 	}
 	.item_pic {
 		height: 400px !important;
@@ -459,9 +446,6 @@
 		display: inline-block;
   		width: calc(100% / 2 - 5px * 2 / 2);
   	}
-  	.header_list {
-    	width: 18%;
-	}
 	.aboutus_title>h1,.service_title>h2,.life_title>h4,.location>h6 {
 		font-size: 22px;
 	}
