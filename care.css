@@ -60,8 +60,9 @@
 	font-family: NSimSun;
 	cursor: default;
 }
-#header,.carousel_box, .aboutus_all, .service_project_box, .life_background_box {
+#header,.carousel_box, .aboutus_all, .service_project_box, .life_background_box, .location_back .booking{
 	background-color: #FFFFF0;
+	height: 100%;
 }
 .carousel_box {
 	margin: 0px auto;
